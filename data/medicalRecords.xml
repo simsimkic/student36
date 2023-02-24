@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<ArrayOfMedicalRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MedicalRecord>
+    <allergies />
+    <hospitalTreatment />
+    <Patient>
+      <notifications />
+      <Name>Pera</Name>
+      <Surname>Peric</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567890123</Jmbg>
+      <appointments />
+    </Patient>
+    <prescriptions>
+      <medicines />
+    </prescriptions>
+    <appointmentReports>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>malaksalost</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>kijavica</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>kasalj</Name>
+          </Symptom>
+          <Symptom>
+            <Name>temperatura</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>kasalj</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>kijavica</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>kijavica</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>temperatura</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>temperatura</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>temperatura</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>temperatura</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>kijavica</Name>
+          </Symptom>
+          <Symptom>
+            <Name>malaksalost</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms />
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms />
+        <allergies>
+          <Allergie>
+            <Allergens>kikiriki</Allergens>
+            <AllergicReaction>Rash</AllergicReaction>
+          </Allergie>
+        </allergies>
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms />
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>kasalj</Name>
+          </Symptom>
+        </symptoms>
+        <appointment>
+          <Doctor xsi:type="DoctorSpecialist">
+            <notifications />
+            <Name>Doktor1</Name>
+            <Surname>Doktoric1</Surname>
+            <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+            <Jmbg>1231231231231</Jmbg>
+            <nonStorageRoom />
+            <medicineApprovals />
+            <DoctorID>0</DoctorID>
+          </Doctor>
+          <endDate>2020-06-30T10:00:00</endDate>
+          <doctor xsi:type="DoctorSpecialist">
+            <notifications />
+            <Name>Doktor1</Name>
+            <Surname>Doktoric1</Surname>
+            <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+            <Jmbg>1231231231231</Jmbg>
+            <nonStorageRoom />
+            <medicineApprovals />
+            <DoctorID>0</DoctorID>
+          </doctor>
+          <AppointmentID>0</AppointmentID>
+          <BeginDate>2020-06-30T09:30:00</BeginDate>
+          <EndDate>2020-06-30T10:00:00</EndDate>
+        </appointment>
+        <allergies>
+          <Allergie>
+            <Allergens>polen</Allergens>
+            <AllergicReaction>HeavyBreathing</AllergicReaction>
+          </Allergie>
+        </allergies>
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis>
+          <Diagnosis>
+            <name>prelom</name>
+            <Name>prelom</Name>
+          </Diagnosis>
+        </diagnosis>
+        <symptoms />
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms />
+        <allergies>
+          <Allergie>
+            <Allergens>kikiriki</Allergens>
+            <AllergicReaction>Rash</AllergicReaction>
+          </Allergie>
+        </allergies>
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis>
+          <Diagnosis>
+            <name>grip</name>
+            <Name>grip</Name>
+          </Diagnosis>
+        </diagnosis>
+        <symptoms />
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis>
+          <Diagnosis>
+            <name>upala slepog creva</name>
+            <Name>upala slepog creva</Name>
+          </Diagnosis>
+        </diagnosis>
+        <symptoms />
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis />
+        <symptoms>
+          <Symptom>
+            <Name>malaksalost</Name>
+          </Symptom>
+        </symptoms>
+        <allergies />
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis>
+          <Diagnosis>
+            <name>grip</name>
+            <Name>grip</Name>
+          </Diagnosis>
+        </diagnosis>
+        <symptoms>
+          <Symptom>
+            <Name>kijavica</Name>
+          </Symptom>
+        </symptoms>
+        <appointment>
+          <Doctor xsi:type="DoctorSpecialist">
+            <notifications />
+            <Name>Doktor1</Name>
+            <Surname>Doktoric1</Surname>
+            <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+            <Jmbg>1231231231231</Jmbg>
+            <nonStorageRoom />
+            <medicineApprovals />
+            <DoctorID>0</DoctorID>
+          </Doctor>
+          <endDate>2020-06-24T10:00:00</endDate>
+          <doctor xsi:type="DoctorSpecialist">
+            <notifications />
+            <Name>Doktor1</Name>
+            <Surname>Doktoric1</Surname>
+            <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+            <Jmbg>1231231231231</Jmbg>
+            <nonStorageRoom />
+            <medicineApprovals />
+            <DoctorID>0</DoctorID>
+          </doctor>
+          <AppointmentID>0</AppointmentID>
+          <BeginDate>2020-06-24T09:30:00</BeginDate>
+          <EndDate>2020-06-24T10:00:00</EndDate>
+        </appointment>
+        <allergies>
+          <Allergie>
+            <Allergens>kikiriki</Allergens>
+            <AllergicReaction>Rash</AllergicReaction>
+          </Allergie>
+        </allergies>
+      </AppointmentReport>
+      <AppointmentReport>
+        <diagnosis>
+          <Diagnosis>
+            <name>virusna infekcija</name>
+            <Name>virusna infekcija</Name>
+          </Diagnosis>
+        </diagnosis>
+        <symptoms>
+          <Symptom>
+            <Name>malaksalost</Name>
+          </Symptom>
+        </symptoms>
+        <allergies>
+          <Allergie>
+            <Allergens>kikiriki</Allergens>
+            <AllergicReaction>Rash</AllergicReaction>
+          </Allergie>
+        </allergies>
+      </AppointmentReport>
+    </appointmentReports>
+  </MedicalRecord>
+</ArrayOfMedicalRecord>

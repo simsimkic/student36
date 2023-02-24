@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02BF8286-DA93-4B6D-A6FB-7A611BE4E2CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WPF_Patient</RootNamespace>
+    <AssemblyName>WPF_Patient</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="KlinikaKod, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Desktop\SIMS\projekat\zajednickiKodNF\KlinikaKod\KlinikaKod\bin\Debug\KlinikaKod.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Commands\MyICommand.cs" />
+    <Compile Include="Converters\BooleanToBrushConverter.cs" />
+    <Compile Include="CustomEventArgs\AppointmentDoktorEventArgs.cs" />
+    <Compile Include="CustomEventArgs\AppointmentEventArgs.cs" />
+    <Compile Include="CustomEventArgs\ChosenPriorityEventArgs.cs" />
+    <Compile Include="CustomEventArgs\IzmenaPregledaEventArgs.cs" />
+    <Compile Include="Models\Enums\Pol.cs" />
+    <Compile Include="Models\LoginData.cs" />
+    <Compile Include="Validaicja\ValidacijaDatum.cs" />
+    <Compile Include="ViewModels\AnketaViewModel.cs" />
+    <Compile Include="ViewModels\ContentViewModel.cs" />
+    <Compile Include="ViewModels\FeedbackViewModel.cs" />
+    <Compile Include="ViewModels\IzmenaPregledaViewModel.cs" />
+    <Compile Include="ViewModels\IzvestajViewModel.cs" />
+    <Compile Include="ViewModels\KartonViewModel.cs" />
+    <Compile Include="ViewModels\ObavestenjaViewModel.cs" />
+    <Compile Include="ViewModels\PocetnaViewModel.cs" />
+    <Compile Include="ViewModels\PreglediViewModel.cs" />
+    <Compile Include="ViewModels\PrijavaViewModel.cs" />
+    <Compile Include="ViewModels\RegistracijaViewModel.cs" />
+    <Compile Include="ViewModels\ZaboravljenaLozinkaViewModel.cs" />
+    <Compile Include="ViewModels\ZakazivanjePregledaPrioritetDatumViewModel.cs" />
+    <Compile Include="ViewModels\ZakazivanjePregledaPrioritetDoktorViewModel.cs" />
+    <Compile Include="ViewModels\ZakazivanjePregledaPrioritetViewModel.cs" />
+    <Compile Include="ViewModels\ZakazivanjePregledaViewModel.cs" />
+    <Compile Include="Views\AnketaView.xaml.cs">
+      <DependentUpon>AnketaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ContentView.xaml.cs">
+      <DependentUpon>ContentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FeedbackView.xaml.cs">
+      <DependentUpon>FeedbackView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IzmenaPregledaView.xaml.cs">
+      <DependentUpon>IzmenaPregledaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IzvestajView.xaml.cs">
+      <DependentUpon>IzvestajView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KartonView.xaml.cs">
+      <DependentUpon>KartonView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ObavestenjaView.xaml.cs">
+      <DependentUpon>ObavestenjaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PocetnaView.xaml.cs">
+      <DependentUpon>PocetnaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PreglediView.xaml.cs">
+      <DependentUpon>PreglediView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PreporukaTermina.xaml.cs">
+      <DependentUpon>PreporukaTermina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrijavaView.xaml.cs">
+      <DependentUpon>PrijavaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegistracijaView.xaml.cs">
+      <DependentUpon>RegistracijaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ZaboravljenaLozinkaView.xaml.cs">
+      <DependentUpon>ZaboravljenaLozinkaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ZakazivanjePregledaPrioritetDatumView.xaml.cs">
+      <DependentUpon>ZakazivanjePregledaPrioritetDatumView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ZakazivanjePregledaPrioritetDoktorView.xaml.cs">
+      <DependentUpon>ZakazivanjePregledaPrioritetDoktorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ZakazivanjePregledaPrioritetView.xaml.cs">
+      <DependentUpon>ZakazivanjePregledaPrioritetView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ZakazivanjePregledaView.xaml.cs">
+      <DependentUpon>ZakazivanjePregledaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xml\XmlReaderWriter.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BindableBase.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\AnketaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ContentView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FeedbackView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\IzmenaPregledaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\IzvestajView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\KartonView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ObavestenjaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PocetnaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PreglediView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PreporukaTermina.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PrijavaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RegistracijaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ZaboravljenaLozinkaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ZakazivanjePregledaPrioritetDatumView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ZakazivanjePregledaPrioritetDoktorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ZakazivanjePregledaPrioritetView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ZakazivanjePregledaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindowViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\arrows.png" />
+    <Resource Include="Images\bell.png" />
+    <Resource Include="Images\blood.png" />
+    <Resource Include="Images\business.png" />
+    <Resource Include="Images\folders.png" />
+    <Resource Include="Images\Pocetna.png" />
+    <Resource Include="Images\shapes-and-symbols.png" />
+    <Resource Include="Images\sign.png" />
+    <Resource Include="Images\social-media %281%29.png" />
+    <Resource Include="Images\social-media.png" />
+    <Resource Include="Images\tools-and-utensils.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

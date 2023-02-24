@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<ArrayOfAppointment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Appointment>
+    <Doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </Doctor>
+    <endDate>2020-06-08T00:00:00</endDate>
+    <Patient>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <appointments />
+    </Patient>
+    <doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </doctor>
+    <AppointmentID>1</AppointmentID>
+    <BeginDate>2020-06-06T00:00:00</BeginDate>
+    <EndDate>2020-06-08T00:00:00</EndDate>
+  </Appointment>
+  <Appointment>
+    <Doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </Doctor>
+    <endDate>2020-06-10T00:00:00</endDate>
+    <Patient>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <appointments />
+    </Patient>
+    <doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </doctor>
+    <AppointmentID>1</AppointmentID>
+    <BeginDate>2020-06-08T00:00:00</BeginDate>
+    <EndDate>2020-06-10T00:00:00</EndDate>
+  </Appointment>
+  <Appointment>
+    <Doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </Doctor>
+    <endDate>2020-06-27T00:30:00</endDate>
+    <Patient>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <appointments />
+    </Patient>
+    <doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </doctor>
+    <AppointmentID>1</AppointmentID>
+    <BeginDate>2020-06-27T00:00:00</BeginDate>
+    <EndDate>2020-06-27T00:30:00</EndDate>
+  </Appointment>
+  <Appointment>
+    <Doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </Doctor>
+    <endDate>2020-06-04T00:30:00</endDate>
+    <Patient>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <appointments />
+    </Patient>
+    <doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </doctor>
+    <AppointmentID>1</AppointmentID>
+    <BeginDate>2020-06-04T00:00:00</BeginDate>
+    <EndDate>2020-06-04T00:30:00</EndDate>
+  </Appointment>
+  <Appointment>
+    <Doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </Doctor>
+    <endDate>2020-06-30T05:30:00</endDate>
+    <Patient>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <appointments />
+    </Patient>
+    <doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </doctor>
+    <AppointmentID>1</AppointmentID>
+    <BeginDate>2020-06-30T05:00:00</BeginDate>
+    <EndDate>2020-06-30T05:30:00</EndDate>
+  </Appointment>
+  <Appointment>
+    <Doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </Doctor>
+    <endDate>2020-06-08T00:00:00</endDate>
+    <Patient>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>1999-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <Email>ivan@ivanovic.com</Email>
+      <appointments />
+    </Patient>
+    <doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </doctor>
+    <AppointmentID>1</AppointmentID>
+    <BeginDate>2020-06-06T00:00:00</BeginDate>
+    <EndDate>2020-06-08T00:00:00</EndDate>
+  </Appointment>
+  <Appointment>
+    <Doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </Doctor>
+    <endDate>2020-07-04T21:00:00</endDate>
+    <Patient>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>1999-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <Email>ivan@ivanovic.com</Email>
+      <appointments />
+    </Patient>
+    <doctor>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </doctor>
+    <AppointmentID>1</AppointmentID>
+    <BeginDate>2020-07-04T20:30:00</BeginDate>
+    <EndDate>2020-07-04T21:00:00</EndDate>
+  </Appointment>
+  <Appointment>
+    <Doctor>
+      <notifications />
+      <Name>pera</Name>
+      <Surname>peric</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1231231231231</Jmbg>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </Doctor>
+    <endDate>2020-07-01T02:30:00</endDate>
+    <Patient>
+      <notifications />
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>1999-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <Password>123</Password>
+      <Email>ivan@ivanovic.com</Email>
+      <appointments />
+    </Patient>
+    <doctor>
+      <notifications />
+      <Name>pera</Name>
+      <Surname>peric</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1231231231231</Jmbg>
+      <nonStorageRoom />
+      <medicineApprovals />
+      <DoctorID>0</DoctorID>
+    </doctor>
+    <AppointmentID>1</AppointmentID>
+    <BeginDate>2020-07-01T02:00:00</BeginDate>
+    <EndDate>2020-07-01T02:30:00</EndDate>
+  </Appointment>
+  <Appointment>
+    <Doctor>
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <DoctorID>0</DoctorID>
+    </Doctor>
+    <endDate>2020-06-30T22:12:35.6727316+02:00</endDate>
+    <Patient>
+      <notifications />
+      <Name>Marko</Name>
+      <Surname>Markovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899999</Jmbg>
+      <Password>123</Password>
+      <Email>marko@gmail.com</Email>
+      <appointments />
+    </Patient>
+    <doctor>
+      <Name>Ivan</Name>
+      <Surname>Ivanovic</Surname>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+      <Jmbg>1234567899876</Jmbg>
+      <DoctorID>0</DoctorID>
+    </doctor>
+    <AppointmentID>1</AppointmentID>
+    <BeginDate>2020-06-30T21:42:35.6727316+02:00</BeginDate>
+    <EndDate>2020-06-30T22:12:35.6727316+02:00</EndDate>
+  </Appointment>
+</ArrayOfAppointment>

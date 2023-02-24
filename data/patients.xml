@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfPatient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Patient>
+    <notifications />
+    <Name>Marko</Name>
+    <Surname>Markovic</Surname>
+    <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    <Jmbg>1234567899999</Jmbg>
+    <Password>123</Password>
+    <Email>marko@gmail.com</Email>
+    <appointments />
+  </Patient>
+  <Patient>
+    <Name>Koja</Name>
+    <Surname>Kojic</Surname>
+    <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    <Jmbg>1234567891234</Jmbg>
+    <Password>123</Password>
+    <Email>koja@gmail.com</Email>
+  </Patient>
+</ArrayOfPatient>

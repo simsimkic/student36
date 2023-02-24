@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ArrayOfDoctor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Doctor>
+    <Name>Ivan</Name>
+    <Surname>Ivanovic</Surname>
+    <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    <Jmbg>1234567899876</Jmbg>
+    <Password>123</Password>
+  </Doctor>
+  <Doctor>
+    <Name>pera</Name>
+    <Surname>peric</Surname>
+    <DateOfBirth>0001-01-11T00:00:00</DateOfBirth>
+    <Jmbg>1231231231231</Jmbg>
+    <Password>123</Password>
+    <Email>pera@gmail.com</Email>
+  </Doctor>
+</ArrayOfDoctor>

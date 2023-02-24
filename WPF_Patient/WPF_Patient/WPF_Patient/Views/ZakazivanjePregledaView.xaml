@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="WPF_Patient.Views.ZakazivanjePregledaView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_Patient.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="LightBlue">
+    <Grid Width="800">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="32.8"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="287.2"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Left" Height="33" Margin="30,0,0,0" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Top" Width="740" Grid.ColumnSpan="3">
+            <TextBlock TextWrapping="Wrap" Text="Zakazivanje novog pregleda" FontSize="24" FontWeight="SemiBold" Height="37" Margin="0,0,0.2,0"/>
+        </StackPanel>
+        <Border BorderBrush="CadetBlue" BorderThickness="5" HorizontalAlignment="Left" Height="287" Margin="30,0.2,0,0" Grid.Row="3" VerticalAlignment="Top" Width="740" Grid.ColumnSpan="3">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="30.4"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="38.4"/>
+                    <RowDefinition Height="94.4"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="0.2,10,0,0" TextWrapping="Wrap" Text="Izaberite lekara: " VerticalAlignment="Top" Height="21" Width="151" FontSize="18" FontWeight="SemiBold" Grid.Row="1" Grid.RowSpan="2"/>
+                <ComboBox Grid.Column="2" FontSize="18" Text="{Binding Doktor, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" RenderTransformOrigin="0.273,0.604" Height="30" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Row="1" Margin="0,1,0,0">
+                    <ComboBoxItem>Dr Verica Mucibabic</ComboBoxItem>
+                    <ComboBoxItem>Dr Pera Dabic</ComboBoxItem>
+                    <ComboBoxItem>Dr Ostoja Nikolic</ComboBoxItem>
+                    <ComboBoxItem>Dr Radomir Nekic</ComboBoxItem>
+                    <ComboBoxItem>Dr Branislav Lukic</ComboBoxItem>
+                    <ComboBoxItem>Dr Anka Peric</ComboBoxItem>
+                </ComboBox>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="0.2,17,0,0" TextWrapping="Wrap" Text="Izaberite datum: " VerticalAlignment="Top" Height="21" Width="151" FontSize="18" FontWeight="SemiBold" Grid.Row="3"/>
+                <DatePicker Grid.Column="2" Text="{Binding Datum, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="0,17,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="181" Height="30" RenderTransformOrigin="0.496,0.913" Grid.RowSpan="2"/>
+                <TextBlock Grid.Column="4" HorizontalAlignment="Left" Margin="0.4,17,0,0" TextWrapping="Wrap" Text="Izaberite termin: " VerticalAlignment="Top" Height="21" Width="151" FontSize="18" FontWeight="SemiBold" Grid.Row="3" Grid.ColumnSpan="2"/>
+                <GroupBox Grid.Column="5" Header="Slobodni termini" HorizontalAlignment="Left" Height="133" Margin="0.2,0,0,0" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Top" Width="181" Grid.ColumnSpan="2">
+                    <ListView HorizontalAlignment="Left" Height="112" Margin="0,0,0,-1.6" VerticalAlignment="Top" Width="166">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+
+                </GroupBox>
+            </Grid>
+
+        </Border>
+        <Button Grid.ColumnSpan="2" Content="Potvrdi" FontSize="22" FontWeight="Medium" HorizontalAlignment="Left" Margin="640,0,0,0" Grid.Row="5" VerticalAlignment="Top" Width="130" Height="50" Grid.RowSpan="2" Name="btnNest"/>
+        <Button Command="{Binding CancelCommand}" Content="Odustani" FontSize="22" FontWeight="Medium" HorizontalAlignment="Left" Margin="469,0,0,0" Grid.Row="5" VerticalAlignment="Top" Width="130" Height="50" Grid.RowSpan="2" Name="btnBack"  />
+
+    </Grid>
+</UserControl>

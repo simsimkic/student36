@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="WPF_Patient.Views.PreporukaTermina"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_Patient.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="LightBlue">
+    <Grid Width="800">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="32.8"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="287.2"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Left" Height="33" Margin="30,0,0,0" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Top" Width="740" Grid.ColumnSpan="3">
+            <TextBlock TextWrapping="Wrap" Text="Preporuka termina" FontSize="24" FontWeight="SemiBold" Height="37" Margin="0,0,0.2,0"/>
+        </StackPanel>
+        <Border BorderBrush="CadetBlue" BorderThickness="5" HorizontalAlignment="Left" Height="287" Margin="30,0.2,0,0" Grid.Row="3" VerticalAlignment="Top" Width="740" Grid.ColumnSpan="3">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="212"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="285.6"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="30.4"/>
+                    <RowDefinition Height="53.6"/>
+                    <RowDefinition Height="52.8"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="0.2,10,0,0" TextWrapping="Wrap" Text="Izaberite lekara: " VerticalAlignment="Top" Height="21" Width="151" FontSize="18" FontWeight="SemiBold" Grid.Row="1" Grid.RowSpan="2"/>
+                <ComboBox Grid.Column="2" HorizontalAlignment="Left" Margin="26,11,0,0" Grid.Row="1" VerticalAlignment="Top" Width="181" RenderTransformOrigin="0.273,0.604" Height="20" FontSize="18" Grid.RowSpan="2"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="0.2,33.6,0,0" TextWrapping="Wrap" Text="Prioritet: " VerticalAlignment="Top" Height="21" Width="151" FontSize="18" FontWeight="SemiBold" Grid.Row="2" Grid.RowSpan="2"/>
+                <ComboBox Grid.Column="2" HorizontalAlignment="Left" Margin="26,32.6,0,0" Grid.Row="2" VerticalAlignment="Top" Width="181" RenderTransformOrigin="0.273,0.604" Height="21" FontSize="18">
+                    <ComboBoxItem Content="Bez prioriteta" FontSize="18"/>
+                    <ComboBoxItem Content="Datum" FontSize="18"/>
+                    <ComboBoxItem Content="Lekar" FontSize="18"/>
+                </ComboBox>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="0.2,32,0,0" TextWrapping="Wrap" Text="Izaberite datum: " VerticalAlignment="Top" Height="21" Width="151" FontSize="18" FontWeight="SemiBold" Grid.Row="3" Grid.RowSpan="2"/>
+                <DatePicker Grid.Column="2" HorizontalAlignment="Left" Margin="26,32,0,0" Grid.Row="3" VerticalAlignment="Top" Width="181" Height="24" Grid.RowSpan="2"/>
+                <Label Content="DO" Grid.Column="3" HorizontalAlignment="Left" Margin="0,23,0,0" Grid.Row="3" Grid.RowSpan="2" VerticalAlignment="Top"  FontSize="18" FontWeight="SemiBold" Height="30"/>
+                <DatePicker Grid.Column="4" HorizontalAlignment="Left" Margin="10,32,0,0" Grid.Row="3" VerticalAlignment="Top" Width="181" Height="24" Grid.RowSpan="2"/>
+                <Label Content="DO" Grid.Column="3" HorizontalAlignment="Left" Margin="0,23,0,0" Grid.Row="3" Grid.RowSpan="2" VerticalAlignment="Top"  FontSize="18" FontWeight="SemiBold" Height="30"/>
+                <Label Content="OD" Grid.Column="1" HorizontalAlignment="Left" Margin="140.2,23,0,0" Grid.Row="3" Grid.RowSpan="2" VerticalAlignment="Top"  FontSize="18" FontWeight="SemiBold" Height="30" Grid.ColumnSpan="2"/>
+            </Grid>
+
+        </Border>
+        <Button Grid.ColumnSpan="2" Content="Preporuči termin" FontSize="22" FontWeight="Medium" HorizontalAlignment="Left" Margin="482,0,0,0" Grid.Row="5" VerticalAlignment="Top" Width="288" Height="50" Grid.RowSpan="2" Name="btnNest" Click="BtnNest_Click"/>
+
+    </Grid>
+</UserControl>

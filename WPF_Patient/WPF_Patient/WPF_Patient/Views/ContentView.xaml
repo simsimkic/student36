@@ -1,0 +1,139 @@
+﻿<UserControl x:Class="WPF_Patient.Views.ContentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:views="clr-namespace:WPF_Patient.Views"
+             xmlns:viewModels="clr-namespace:WPF_Patient.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="830" d:DesignWidth="1550">
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type viewModels:AnketaViewModel}">
+            <views:AnketaView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:FeedbackViewModel}">
+            <views:FeedbackView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:IzmenaPregledaViewModel}">
+            <views:IzmenaPregledaView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:IzvestajViewModel}">
+            <views:IzvestajView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:KartonViewModel}">
+            <views:KartonView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:ObavestenjaViewModel}">
+            <views:ObavestenjaView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:PocetnaViewModel}">
+            <views:PocetnaView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:PreglediViewModel}">
+            <views:PreglediView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:PrijavaViewModel}">
+            <views:PrijavaView/>
+        </DataTemplate>
+		<DataTemplate DataType="{x:Type viewModels:RegistracijaViewModel}">
+			<views:RegistracijaView/>
+		</DataTemplate>
+		<DataTemplate DataType="{x:Type viewModels:ZakazivanjePregledaViewModel}">
+            <views:ZakazivanjePregledaView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:ZakazivanjePregledaPrioritetViewModel}">
+            <views:ZakazivanjePregledaPrioritetView/>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid Background="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="92"/>
+            <RowDefinition Height="660"/>
+            <RowDefinition Height="46.4"/>
+        </Grid.RowDefinitions>
+        <StatusBar HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="1550" Margin="0,22,0,0" Grid.Row="3"/>
+        <StackPanel Margin="0,0,0.4,0.2">
+            <Menu HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="1550">
+                <MenuItem Header="New"  Height="30" Width="80" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <MenuItem Header="Pregled" Command="{Binding NavCommand}" CommandParameter="zakazivanjePregleda" />
+					<MenuItem Header="Feedback" Command="{Binding NavCommand}" CommandParameter="feedback"/>
+
+                </MenuItem>
+                <MenuItem Header="Edit" Height="30" Width="80" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+					<MenuItem Header="Lični podaci" Command="{Binding NavCommand}" CommandParameter="licniPodaci"/>
+					<MenuItem Header="Pregled" Command="{Binding NavCommand}" CommandParameter="pregledi"/>
+                </MenuItem>
+                <MenuItem Header="About" Height="30" Width="80" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+					<MenuItem Header="O nama" Command="{Binding NavCommand}" CommandParameter="oNama"/>
+                </MenuItem>
+                <MenuItem Header="Help" Height="30" Width="80" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+					<MenuItem Header="Demo" Command="{Binding NavCommand}" CommandParameter="demo"/>
+                    <MenuItem Header="Pomoć" Command="{Binding NavCommand}" CommandParameter="pomoc">
+                        
+                    </MenuItem>
+                    <Separator></Separator>
+					<MenuItem Header="Izlaz" Command="{Binding NavCommand}" CommandParameter="izlaz"/>
+                </MenuItem>
+
+            </Menu>
+        </StackPanel>
+        <ToolBar HorizontalAlignment="Left" Height="92" Margin="-3,30,0,0" VerticalAlignment="Top" Width="1553" Grid.RowSpan="2">
+            <Button Height="90" VerticalAlignment="Top" Width="90" Margin="0,0,0,-5" Command="{Binding NavCommand}" CommandParameter="pocetna">
+                <StackPanel Height="90" Width="80">
+                    <Image Source="../Images/social-media.png" Margin="14,-9,10,0.2" Height="77" RenderTransformOrigin="0.431,0.704"/>
+                    <TextBlock Text="Početna" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="15,0,10,0" Width="55"/>
+                </StackPanel>
+            </Button>
+            <Button Height="90" VerticalAlignment="Top" Width="90" Margin="0,0,0,-5" Command="{Binding NavCommand}" CommandParameter="pregledi">
+                <StackPanel Height="90" Width="80">
+                    <Image Source="../Images/blood.png" Margin="1,0,2,2" Height="65" RenderTransformOrigin="0.431,0.704"/>
+                    <TextBlock Text="Pregledi" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center" Height="21" Margin="14,0"/>
+                </StackPanel>
+            </Button>
+            <Button Height="90" VerticalAlignment="Top" Width="90" Margin="0,0,0,-5" Command="{Binding NavCommand}" CommandParameter="karton">
+                <StackPanel Height="90" Width="80">
+                    <Image Source="../Images/folders.png" Margin="1,0,2,2" Height="65" RenderTransformOrigin="0.431,0.704"/>
+                    <TextBlock Text="Karton" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button Height="90" VerticalAlignment="Top" Width="90" Margin="0,0,0,-5" Command="{Binding NavCommand}" CommandParameter="izvestaj">
+                <StackPanel Height="90" Width="80">
+                    <Image Source="../Images/business.png" Margin="1,0,2,2" Height="65" RenderTransformOrigin="0.431,0.704"/>
+                    <TextBlock Text="Izveštaj" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Separator Margin="0,4" Width="0,4" Background="LightBlue"/>
+            <Button Height="90" VerticalAlignment="Top" Width="90" Margin="0,0,0,-5" Command="{Binding NavCommand}" CommandParameter="demo">
+                <StackPanel Height="90" Width="80">
+                    <Image Source="../Images/arrows.png" Margin="1,0,2,2" Height="65" RenderTransformOrigin="0.431,0.704"/>
+                    <TextBlock Text="Demo" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button Height="90" VerticalAlignment="Top" Width="90" Margin="0,0,0,-5" Command="{Binding NavCommand}" CommandParameter="obavestenja">
+                <StackPanel Height="90" Width="80">
+                    <Image Source="../Images/bell.png" Margin="1,0,2,2" Height="65" RenderTransformOrigin="0.431,0.704"/>
+                    <TextBlock Text="Obaveštenja" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+
+        </ToolBar>
+        <Grid HorizontalAlignment="Left" Height="683" Margin="0,91.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="1550" Grid.RowSpan="3">
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Column="1" HorizontalAlignment="Left" Height="619" Grid.Row="1" VerticalAlignment="Top" Width="1510">
+                    <ContentControl Content="{Binding CurrentContentViewModel, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                </Grid>
+            </Grid>
+    </Grid>
+</UserControl>

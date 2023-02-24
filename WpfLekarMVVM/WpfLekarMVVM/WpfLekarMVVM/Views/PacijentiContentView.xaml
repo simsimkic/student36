@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="WpfLekarMVVM.Views.PacijentiContentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:views="clr-namespace:WpfLekarMVVM.Views"
+             xmlns:viewModels="clr-namespace:WpfLekarMVVM.ViewModels"
+             xmlns:local="clr-namespace:WpfLekarMVVM.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1024">
+	<UserControl.Resources>
+		<DataTemplate DataType="{x:Type viewModels:AlergijeViewModel}">
+            <views:AlergijeView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:SimptomiViewModel}">
+            <views:SimptomiView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:PacijentiViewModel}">
+            <views:PacijentiView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:DijagnozaViewModel}">
+            <views:DijagnozaView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:IzborPacijentaViewModel}">
+            <views:IzborPacijentaView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:KontrolaViewModel}">
+            <views:KontrolaView/>
+        </DataTemplate>
+		<DataTemplate DataType="{x:Type viewModels:NoviPregledViewModel}">
+			<views:NoviPregledView/>
+		</DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:OperacijaViewModel}">
+            <views:OperacijaView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:PrepisiReceptViewModel}">
+            <views:PrepisiReceptView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:UputOpViewModel}">
+            <views:UputOpView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:UputSpecViewModel}">
+            <views:UputSpecView/>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid Background="AliceBlue">
+		<Grid Panel.ZIndex="50">
+			<ContentControl Content="{Binding CurrentContentViewModel, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+		</Grid>
+	</Grid>
+</UserControl>

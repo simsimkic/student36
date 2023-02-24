@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="WpfLekarMVVM.Views.LekoviView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfLekarMVVM.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1024">
+    <Grid Background="AliceBlue">
+        <Grid Width="933"
+              HorizontalAlignment="Right">
+
+            <StackPanel>
+                <Label Content="Lista lekova za odobravanje:"
+                       FontSize="20"
+                       Width="300"
+                       Margin="40,100,0,0"
+                       HorizontalAlignment="Left"/>
+                <Label Content="Unesite komentar za upravnika:"
+                       FontSize="20"
+                       Width="300"
+                       Margin="0,-35,140,0"
+                       HorizontalAlignment="Right"/>
+                <DataGrid Width="400"
+                     Height="550"
+                     VerticalAlignment="Bottom"
+                     Margin="30,20,0,0"
+                     Background="LightBlue"
+					 HorizontalAlignment="Left"
+                     AutoGenerateColumns="False"
+					 CanUserAddRows="False"
+					 SelectionMode="Extended"
+					 ItemsSource="{Binding Medicines}"
+					 SelectedItem="{Binding CurrentMedicine}"
+                          SelectedValue="{Binding SelectedMedicine}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="LEK" Width="*" Binding="{Binding Name}"/>
+                        <DataGridTextColumn Header="SASTOJCI" Width="*" Binding="{Binding Ingredient}"/>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <TextBox Height="300"
+                         Width="400"
+                         Margin="450,-800,0,0"
+                         Background="LightBlue">
+
+                </TextBox>
+
+                <Button Content="Potvrdi"
+                        Width="100"
+                        Height="50"
+                        HorizontalAlignment="Right"
+                        FontSize="20"
+                        Background="LightBlue"
+                        Margin="0,-50,250,0"
+                        Command="{Binding DaljeCommand}"/>
+                <Button Content="Odbij"
+                        Width="100"
+                        Height="50"
+                        Background="LightBlue"
+                        FontSize="20"
+                        HorizontalAlignment="Right"
+                        Margin="0,-50,70,0"
+                        Command="{Binding DaljeCommand}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

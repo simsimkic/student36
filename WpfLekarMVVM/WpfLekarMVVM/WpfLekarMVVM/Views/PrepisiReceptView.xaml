@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="WpfLekarMVVM.Views.PrepisiReceptView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfLekarMVVM.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1024">
+    <Grid Background="AliceBlue">
+        <Button 
+		    BorderThickness="0"
+			Height="50" 
+			Width="70" 
+			Background="AliceBlue" 
+			Foreground="White" 
+			FontSize="20" 
+			Margin="0,10,824,708"
+			Command="{Binding NazadCommand}"
+            ToolTip="Nazad">
+            <Image Source="../Images/back.png" Stretch="Fill"/>
+        </Button>
+        <Label Content="Izaberite zeljene lekove:"
+               FontSize="20"
+               Margin="200,90,0,0"
+               Width="220"
+               Height="40"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"/>
+        <Label Content="Izaberite kolicinu:"
+               FontSize="20"
+               Margin="0,90,50,0"
+               Width="200"
+               Height="40"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Right"/>
+        <DataGrid Width="400"
+                     Height="550"
+                     VerticalAlignment="Bottom"
+                     Margin="200,0,0,80"
+                     Background="LightBlue"
+					 HorizontalAlignment="Left"
+                     AutoGenerateColumns="False"
+					 CanUserAddRows="False"
+					 SelectionMode="Extended"
+				  Foreground="Black"
+					 ItemsSource="{Binding Medicines}"
+					 SelectedItem="{Binding CurrentMedicine}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="LEKOVI" Width="*" Binding="{Binding Name}" />
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Height="80"
+                Width="170"
+                Content="Nastavi"
+                FontSize="20"
+                Background="LightBlue"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,40,80"
+				Command="{Binding ZakaziCommand}"/>
+        <ComboBox HorizontalAlignment="Right" Margin="0,140,100,0" VerticalAlignment="Top" Width="150"
+                  SelectedIndex="{Binding Selected5}">
+            <ComboBoxItem Content="1" />
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+            <ComboBoxItem Content="9"/>
+            <ComboBoxItem Content="10"/>
+        </ComboBox>
+    </Grid>
+</UserControl>

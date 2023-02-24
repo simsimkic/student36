@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ArrayOfSymptom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Symptom>
+    <Name>kijavica</Name>
+  </Symptom>
+  <Symptom>
+    <Name>temperatura</Name>
+  </Symptom>
+  <Symptom>
+    <Name>kasalj</Name>
+  </Symptom>
+  <Symptom>
+    <Name>malaksalost</Name>
+  </Symptom>
+</ArrayOfSymptom>

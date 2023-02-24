@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfDiagnosis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Diagnosis>
+    <name>prehlada</name>
+    <Name>prehlada</Name>
+  </Diagnosis>
+  <Diagnosis>
+    <name>grip</name>
+    <Name>grip</Name>
+  </Diagnosis>
+  <Diagnosis>
+    <name>upala pluca</name>
+    <Name>upala pluca</Name>
+  </Diagnosis>
+  <Diagnosis>
+    <name>prelom</name>
+    <Name>prelom</Name>
+  </Diagnosis>
+  <Diagnosis>
+    <name>upala slepog creva</name>
+    <Name>upala slepog creva</Name>
+  </Diagnosis>
+  <Diagnosis>
+    <name>virusna infekcija</name>
+    <Name>virusna infekcija</Name>
+  </Diagnosis>
+</ArrayOfDiagnosis>

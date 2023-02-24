@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ArrayOfMedicine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Medicine>
+    <medicineIngredients />
+    <Name>brufen</Name>
+    <MedicineIngredients />
+  </Medicine>
+  <Medicine>
+    <medicineIngredients />
+    <Name>amoksicilin</Name>
+    <MedicineIngredients />
+  </Medicine>
+  <Medicine>
+    <medicineIngredients />
+    <Name>febricet</Name>
+    <MedicineIngredients />
+  </Medicine>
+  <Medicine>
+    <medicineIngredients />
+    <Name>andol</Name>
+    <MedicineIngredients />
+  </Medicine>
+  <Medicine>
+    <medicineIngredients />
+    <Name>ranisan</Name>
+    <MedicineIngredients />
+  </Medicine>
+</ArrayOfMedicine>

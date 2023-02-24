@@ -1,0 +1,145 @@
+﻿<UserControl x:Class="WPF_Patient.Views.KartonView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_Patient.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="620" d:DesignWidth="1550" Background="LightBlue">
+    <Grid HorizontalAlignment="Left" Height="620" VerticalAlignment="Top" Width="1504">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition/>
+            <RowDefinition Height="20"/>
+
+        </Grid.RowDefinitions>
+        <Label Content="Zdravstveni Karton" FontSize="38" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Left" Margin="0.4,0.4,0,0" Grid.Row="1" VerticalAlignment="Top" Height="60" Width="375" Grid.RowSpan="2"/>
+        <Border BorderBrush="CadetBlue" BorderThickness="5" Grid.Column="1" HorizontalAlignment="Left" Height="478" Margin="0.4,0.4,0,0" Grid.Row="3" VerticalAlignment="Top" Width="1404">
+            <StackPanel Margin="5.2,5.2,4.4,5.6">
+                <TabControl Height="456">
+                    <TabItem Header="Izveštaj sa pregleda"
+                                 FontSize="20">
+
+                        <DataGrid Width="1321"
+                     Height="369"
+                     VerticalAlignment="Bottom"
+                     Background="LightBlue"
+					 HorizontalAlignment="Left"
+                     AutoGenerateColumns="False"
+					 CanUserAddRows="False"
+					 SelectionMode="Extended"
+					 ItemsSource="{Binding  AppointmentReports}" Margin="29,0,0,20.2"
+					 >
+                            <DataGrid.Columns >
+                                <DataGridTextColumn IsReadOnly="True" Header="Datum" Width="*" Binding="{Binding date}"/>
+                                <DataGridTextColumn IsReadOnly="True" Header="Vrsta pregleda" Width="*" Binding="{Binding typeOfAppointment}"/>
+                                <DataGridTextColumn IsReadOnly="True" Header="Doktor" Width="*" Binding="{Binding doctor}"/>
+                                <DataGridTextColumn IsReadOnly="True" Header="Specijalizacija" Width="*" Binding="{Binding specialization}"/>
+                                <DataGridTextColumn IsReadOnly="True" Header="Mišljenje lekara" Width="*" Binding="{Binding diagnosis}"/>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                    </TabItem>
+                    <TabItem Header="Alergije"
+                                 FontSize="20">
+
+                        <DataGrid Width="1321"
+                     Height="369"
+                     VerticalAlignment="Bottom"
+                     Background="LightBlue"
+					 HorizontalAlignment="Left"
+                     AutoGenerateColumns="False"
+					 CanUserAddRows="False"
+					 SelectionMode="Extended"
+					 ItemsSource="{Binding  Allergies}" Margin="29,0,0,20.2" IsReadOnly="True"
+					 >
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="Alergeni" Width="*" Binding="{Binding allergens}"/>
+                                <DataGridTextColumn Header="Alergijske reakcije" Width="*" Binding="{Binding Reaction}"/>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                    </TabItem>
+                    <TabItem Header="Bolničko lečenje"
+                                 FontSize="20">
+
+                        <DataGrid Width="1321"
+                     Height="369"
+                     VerticalAlignment="Bottom"
+                     Background="LightBlue"
+					 HorizontalAlignment="Left"
+                     AutoGenerateColumns="False"
+					 CanUserAddRows="False"
+					 SelectionMode="Extended"
+					 ItemsSource="{Binding  HospitalTreatments}" Margin="29,0,0,20.2" IsReadOnly="True"
+					 >
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="Uzrok hospitalizacije" Width="*" Binding="{Binding CauseOfHospitalization}"/>
+                                <DataGridTextColumn Header="Datum prijema" Width="*" Binding="{Binding DateOfReceipt}"/>
+                                <DataGridTextColumn Header="Datum otpusta" Width="*" Binding="{Binding ReleaseDate}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                    </TabItem>
+                    <TabItem Header="Istorija bolesti"
+                                 FontSize="20">
+
+                        <DataGrid Width="1321"
+                     Height="369"
+                     VerticalAlignment="Bottom"
+                     Background="LightBlue"
+					 HorizontalAlignment="Left"
+                     AutoGenerateColumns="False"
+					 CanUserAddRows="False"
+					 SelectionMode="Extended"
+					 ItemsSource="{Binding  MedicalHistories}" Margin="29,0,0,20.2" IsReadOnly="True"
+					 >
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="Težina" Width="*" Binding="{Binding weight}"/>
+                                <DataGridTextColumn Header="Visina" Width="*" Binding="{Binding height}"/>
+                                <DataGridTextColumn Header="Pušač" Width="*" Binding="{Binding smoker}"/>
+                                <DataGridTextColumn Header="Alkoholičar" Width="*" Binding="{Binding alcoholic}"/>
+                                <DataGridTextColumn Header="Bolesti" Width="*" Binding="{Binding diseases}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                    </TabItem>
+                    <TabItem Header="Prepisani recepti"
+                                 FontSize="20">
+                        <DataGrid Width="1320"
+                     Height="369"
+                     VerticalAlignment="Bottom"
+                     Background="LightBlue"
+					 HorizontalAlignment="Left"
+                     AutoGenerateColumns="False"
+					 CanUserAddRows="False"
+					 SelectionMode="Extended"
+					  Margin="29,0,0,19.8"
+					 ItemsSource="{Binding  Medicines}"
+					 >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Lek" Width="*" Binding="{Binding name}"/>
+                                <DataGridTextColumn Header="Dnevna doza" Width="*" Binding="{Binding Ingredient}"/>
+                                <DataGridTextColumn Header="Početak uzimanja terapije" Width="*" Binding="{Binding Date}"/>
+                                <DataGridTextColumn Header="Kraj uzimanja terapije" Width="*" Binding="{Binding DateEnd}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </TabItem>
+                </TabControl>
+
+            </StackPanel>
+        </Border>
+        <Label Content="Broj kartona:" FontWeight="Bold" FontSize="32" Grid.Column="1" HorizontalAlignment="Left" Margin="1045.4,6.4,0,0" Grid.Row="1" VerticalAlignment="Top" Height="50" Width="194"/>
+        <TextBox Grid.Column="1" FontWeight="Bold" FontSize="32" Background="Transparent" HorizontalAlignment="Left" Height="50" Margin="1244.4,10.4,0,0" Grid.Row="1" TextWrapping="Wrap" Text="15647" VerticalAlignment="Top" Width="150" Grid.RowSpan="2"/>
+
+    </Grid>
+</UserControl>

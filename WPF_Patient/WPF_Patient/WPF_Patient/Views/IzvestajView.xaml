@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="WPF_Patient.Views.IzvestajView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_Patient.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="620" d:DesignWidth="1504" Background="LightBlue">
+    <Grid >
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="58.4"/>
+            <RowDefinition Height="60.8"/>
+            <RowDefinition Height="361.6"/>
+            <RowDefinition Height="76.8"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Left" Height="59" Margin="30,0.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="769">
+            <TextBlock TextWrapping="Wrap" Text="Izveštaj o rasporedu uzimanja terapije" FontSize="40
+                       " FontWeight="SemiBold" Height="60"/>
+        </StackPanel>
+        <Border BorderBrush="CadetBlue" BorderThickness="5" HorizontalAlignment="Center" Height="335" Margin="401,25.4,343.6,0" Grid.Row="3" VerticalAlignment="Top" Width="729">
+            <Grid Margin="0.2,0.2,-5.8,4.6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="36.8"/>
+                    <ColumnDefinition Width="328.8"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="286.4"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="39.2"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="18" Text="Izaberite period za generisanje izeštaja:" VerticalAlignment="Top" Margin="0.2,10,0,0" Grid.Row="1" Height="29" Width="329" Grid.Column="1" Grid.ColumnSpan="2"/>
+                <Calendar Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="178" Margin="95.2,40.8,0,0" Height="162" SelectedDate="{Binding OdDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <Calendar Grid.Column="3" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="190" Margin="45.6,40.8,0,0" Height="162"
+                          SelectedDate="{Binding DoDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+					      DisplayDateStart="{Binding OdDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                </Calendar>
+                <Label Content="OD" FontSize="24" Grid.Column="1" HorizontalAlignment="Left" Margin="0.2,88.8,0,0" Grid.Row="2" VerticalAlignment="Top" Height="42" Width="45"/>
+                <Label Content="DO" FontSize="24" Grid.Column="2" HorizontalAlignment="Left" Margin="4.4,88.8,0,0" Grid.Row="2" VerticalAlignment="Top" Height="42" Width="48" RenderTransformOrigin="0.112,0.49"/>
+            </Grid>
+
+        </Border>
+        <Button Content="Generiši izveštaj" FontSize="22" FontWeight="Medium" HorizontalAlignment="Left" Margin="929,15.8,0,0" Grid.Row="4" VerticalAlignment="Top" Width="201" Height="50" Command="{Binding GenerateReportCommand}"/>
+        <Button Content="Odustani" FontSize="22" FontWeight="Medium" HorizontalAlignment="Left" Margin="693,15.8,0,0" Grid.Row="4" VerticalAlignment="Top" Width="201" Height="50" Name="btnBack" RenderTransformOrigin="2.194,0.496" Command="{Binding CancelCommand}"/>
+
+    </Grid>
+</UserControl>

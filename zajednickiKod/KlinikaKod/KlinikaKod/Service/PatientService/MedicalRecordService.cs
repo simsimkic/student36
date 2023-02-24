@@ -1,0 +1,41 @@
+/***********************************************************************
+ * Module:  MedicalRecordService.cs
+ * Purpose: Definition of the Class Service.PatientService.MedicalRecordService
+ ***********************************************************************/
+
+using Model.Patient;
+using System;
+using System.Collections.Generic;
+
+namespace Service.PatientService
+{
+   public class MedicalRecordService
+   {
+      public Model.Patient.MedicalRecord OverviewOfRecord()
+      {
+         // TODO: implement
+         return null;
+      }
+      
+      public List<Allergie> OverviewAllergies()
+      {
+         // TODO: implement
+         return null;
+      }
+      
+      public Model.Patient.HospitalTreatment OverviewHospitalTreatment()
+      {
+         // TODO: implement
+         return null;
+      }
+      
+      public Model.Patient.MedicalHistory OverviewMedicalHistory()
+      {
+         // TODO: implement
+         return null;
+      }
+   
+      public Repository.PatientRepository.MedicalRecordRepository medicalRecordRepository;
+   
+   }
+}

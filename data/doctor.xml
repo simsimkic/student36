@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ArrayOfDoctor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Doctor>
+  <Name>Doktor1</Name>
+  <Surname>Doktoric1</Surname>
+  <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+  <Jmbg>1231231231231</Jmbg>
+  <WorkPeriod>
+    <BeginDate>0001-01-01T08:00:00</BeginDate>
+    <EndDate>0001-01-01T20:00:00</EndDate>
+  </WorkPeriod>
+</Doctor>
+</ArrayOfDoctor>
